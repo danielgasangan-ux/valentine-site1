@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Be My Valentine 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="photo1v2.jpg" class="main-img" alt="Valentine Image">
+
+        <h1>Can you be my Valentine? 💘</h1>
+
+        <div class="buttons">
+            <a href="yes.html">
+                <button class="yes-btn">YES 💖</button>
+            </a>
+
+            <button class="no-btn" id="noBtn">NO 😝</button>
+        </div>
+    </div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+    noBtn.style.position = "absolute";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+});
+</script>
+
+</body>
+</html>
